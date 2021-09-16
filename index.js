@@ -1,3 +1,4 @@
+require('dotenv').config();
 const {
     leerInput,
     inquirerMenu,
@@ -6,6 +7,10 @@ const Busquedas = require("./models/busquedas");
 
 console.clear();
 console.log('hola mundo');
+
+console.log('variable entornos -> ');
+console.log(process.env);
+console.log(process.env.MAPBOX_KEY);
 
 const main = async() => {
     const busquedas = new Busquedas;
@@ -24,13 +29,13 @@ const main = async() => {
                 //Seleccionar el lugar
                 //Clima
                 //Mostrar resultados
-                console('\nInformacion de la ciudad\n'.green);
-                console('Ciudad: ');
-                console('Lat: ');
-                console('Lng: ');
-                console('Temperatura: ');
-                console('Minima: ');
-                console('Maxima: ');
+                console.log('\nInformacion de la ciudad\n'.green);
+                console.log('Ciudad: ');
+                console.log('Lat: ');
+                console.log('Lng: ');
+                console.log('Temperatura: ');
+                console.log('Minima: ');
+                console.log('Maxima: ');
             break;
             case 2:
                 await leerInput('Hola:');

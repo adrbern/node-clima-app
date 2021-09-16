@@ -32,7 +32,6 @@ const salida = {
 
 
 const inquirerMenu = async() => {
-    console.clear();
     console.log('========================='.green);
     console.log(' Selecciona una opcion'.white);
     console.log('=========================\n'.green);
